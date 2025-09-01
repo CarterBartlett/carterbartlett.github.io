@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;300&display=swap');
+
+:root {
+    --bg: #303030;
+    --text: #ffffff;
+    --bg-linkset: #404040;
+    --bg-linkset-hover: #505050;
+
+    --bg-light: #f0f0f0;
+    --text-light: #000000;
+    --bg-linkset-light: #e0e0e0;
+    --bg-linkset-hover-light: #c0c0c0;
+}
+header {
+    display: flex;
+    gap: 16px;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px;
+    background-color: var(--bg);
+    color: #ffffff;
+}
+body.light-mode {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+}
+
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-container .tooltip-text {
+    visibility: hidden;
+    width: max-content;
+    max-width: 300px;
+    white-space: normal;
+    word-break: break-word;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 6px 10px;
+    position: absolute;
+    z-index: 1;
+    top: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-size: 14px;
+    pointer-events: none;
+}
+
+.tooltip-container:hover .tooltip-text,
+.tooltip-container:focus .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+a {
+    color: #1e90ff;
+}
+
+ul.linkset {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.linkset li {
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: var(--bg-linkset);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+body.light-mode ul.linkset li {
+    background-color: var(--bg-linkset-light);
+    color: var(--text-light);
+}
+
+ul.linkset li:hover {
+    background-color: var(--bg-linkset-hover);
+}
+body.light-mode ul.linkset li:hover {
+    background-color: var(--bg-linkset-hover-light);
+}
+
+ul.linkset a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.linkset i.fa-brands,
+.linkset i.fa-solid,
+.linkset i.fas,
+.linkset i.fab {
+    margin-right: 10px;
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+span.button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+}
