@@ -15,11 +15,4 @@ This is the source code for my personal portfolio website, hosted at [carterbart
 - `main.js` — JavaScript for interactivity (e.g., theme toggle)
 
 ## License
-All projects and code in this repository are licensed under [Creative Commons Zero (CC0)](https://creativecommons.org/publicdomain/zero/1.0/). You are free to use, modify, and distribute them as you wish, even without attribution and for commercial purposes.
-
-## Contact
-Email: contactme.sturdily829@passmail.net
-
----
-
-Feel free to fork, clone, or use any part of this site for your own projects. If you find it useful, a shout-out is appreciated!
+This project is licensed under The Unlicense. You have explicit permission to copy, modify, publish, use, compile, sell or distribute this software for any purpose (commercial & non-commercial), by any means and either with or without attribution. [Full details at unlicense.org](https://unlicense.org/).
